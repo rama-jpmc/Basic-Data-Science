@@ -1,3 +1,7 @@
+# This basic algorithm is python illustrates how to develop population data and calculate confidence intervals. 
+# It uses the upper and lower bounds from the confidence intervals to execute significance testing. 
+# It also visualizes both the null and the alternative hypothesis. 
+
 get_ipython().magic(u'matplotlib inline')
 
 import numpy as np
