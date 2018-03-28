@@ -1,6 +1,3 @@
-
-# This Project is a basic algorithm on how to code a population database, calculate confidence intervals, and perform significance testing by using upper and lower bounds.  
-
 get_ipython().magic(u'matplotlib inline')
 
 import numpy as np
