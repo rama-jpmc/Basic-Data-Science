@@ -1,3 +1,5 @@
+# This algorithm performs significant testing by using Z-Scores and the area under the curve of the null hypothesis distribution. 
+# It also calculates the power and the Cohen's-D for that particular test.
 
 import scipy.stats as st
 
