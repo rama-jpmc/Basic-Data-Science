@@ -1,7 +1,6 @@
-
-# coding: utf-8
-
-# In[13]:
+#This simple algorithm codes for a population distribution and conducts significant testing but with a correction for Type A errors. 
+#It uses the concept of Bonferroni corrections to change the confidence interval. 
+# It also calculates the correction in the error after the bonferroni adjustment. 
 
 get_ipython().magic(u'matplotlib inline')
 
