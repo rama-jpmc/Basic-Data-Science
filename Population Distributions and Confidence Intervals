@@ -1,7 +1,5 @@
 
-# coding: utf-8
-
-# In[ ]:
+# This Project is a basic algorithm on how to code a population database, calculate confidence intervals, and perform significance testing by using upper and lower bounds.  
 
 get_ipython().magic(u'matplotlib inline')
 
@@ -76,8 +74,7 @@ def sample_procedure(dist):
     
     print "The population standard error is " + str(k)
     print "The estimate of standard errors from the samples is " + str(l)
-    
-    # The line below if answer to Optional Challenge Part 1. 
+     
     print "The error in our estimate of standard errors is " + str( (k-l)/k*100 ) + " %"
     
     lower_bounds = []
@@ -91,20 +88,18 @@ def sample_procedure(dist):
         s = max(lower_bounds)      # The maximum of the lower bounds
         t = min(upper_bounds)      #The minimum of the upper bounds 
         
-        # The confidence interval (s,t) is the interval we need for Optional Challenge Part 3(a)
         u = min(lower_bounds)      # The minimum of lower bounds 
         v = max(upper_bounds)      # The maximum of upper bounds 
         
-        # The confidence interval (u,v) is the interval we need for Optional Challenge Part 3(b)
     print "The confidence interval with highest lower bound and lowest upper bound is " + str(s) +  "," + str(t)
     print "The confidence interval with lowest lower bound and highest upper bound is " + str(u) +  "," + str(v)
     
-    if c>s and c<t:    # Checking for answer of Optional Challenge Part 3(a)
+    if c>s and c<t:   
         print "The population mean lies in the confidence interval of highest lower bound and lowest upper bound."
     else: 
         print "The population mean doesn't lie in the confidence interval of highest lower bound and lowest upper bound."
 
-    if c>u and c<v:   # Checking for answer of Optional Challenge Part 3(b)
+    if c>u and c<v:  
         print "The population mean lies in the confidence interval of lowest lower bound and highest upper bound."
     else: 
         print "The population mean doesn't lie in the confidence interval of lowest lower bound and highest upper bound."
