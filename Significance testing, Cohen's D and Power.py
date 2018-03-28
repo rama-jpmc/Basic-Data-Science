@@ -1,8 +1,4 @@
 
-# coding: utf-8
-
-# In[1]:
-
 import scipy.stats as st
 
 def significance(alpha, mean1, mean2, sd1, sd2, size1, size2):
